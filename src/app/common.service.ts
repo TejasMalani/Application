@@ -40,7 +40,7 @@ export class CommonService {
   //  Save data function
   setData(key: string, data: any) {
     if (this.userObject == null) {
-      localStorage.setItem(key, JSON.stringify(data));
+      localStorage.setItem(key, JSON.stringify([data]));
       this.updateUserData(data);
     } else {
       console.log(data);
